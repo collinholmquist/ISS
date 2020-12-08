@@ -47,7 +47,7 @@ public class PassTimes {
             riseTimes = new long[passTimes.length()];
             
             for(int i = 0; i < passTimes.length(); i++) {
-                durations[i] = passTimes.getJSONObject(i).getLong("duration");
+                durations[i] = passTimes.getJSONObject(i).getInt("duration");
                 riseTimes[i] = passTimes.getJSONObject(i).getLong("risetime"); 
             }
             
